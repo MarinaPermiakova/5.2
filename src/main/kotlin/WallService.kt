@@ -1,10 +1,10 @@
 object WallService {
     private var posts = emptyArray<Post>()
-    private var id = 0
 
     fun add(post: Post): Post {
-        id += 1
-        post.id = id
+        post.id = if (posts.isNotEmpty())
+            posts.last().id + 1
+        else 1
         posts += post
         return posts.last()
     }
@@ -22,7 +22,6 @@ object WallService {
             post.owner_id = posts[index].owner_id
             post.date = posts[index].date
             posts[index] = post
-            res
         }
         return res
     }
