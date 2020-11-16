@@ -1,9 +1,9 @@
 class Post(
     var id: Int,
-    val owner_id: Int,
+    var owner_id: Int,
     val from_id: Int,
     val created_by: Int,
-    val date: Int,
+    var date: Int,
     val text: String,
     val reply_owner_id: Int,
     val reply_post_id: Int,
