@@ -39,10 +39,7 @@ fun main() {
         is_pinned = true,
         marked_as_ads = true,
         is_favorite = true,
-        postponed_id = 44,
-        copy_history = null,
-        post_source = null,
-        geo = null
+        postponed_id = 44
     )
 
     val originalUpdated = Post(
@@ -84,16 +81,7 @@ fun main() {
         is_pinned = true,
         marked_as_ads = true,
         is_favorite = true,
-        postponed_id = 44,
-        copy_history = null,
-        post_source = null,
-        geo = Geo("Russia", "2345", null)
-    )
-
-    class Geo(
-        val type: String,
-        val coordinates: String,
-        val place: Place
+        postponed_id = 44
     )
 
     val service = WallService

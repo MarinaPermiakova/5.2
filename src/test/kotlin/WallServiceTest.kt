@@ -46,10 +46,7 @@ class WallServiceTest {
             is_pinned = true,
             marked_as_ads = true,
             is_favorite = true,
-            postponed_id = 44,
-            copy_history = null,
-            post_source = null,
-            geo = null
+            postponed_id = 44
         )
         val result = post.id
         assertEquals(3, result)
@@ -96,10 +93,7 @@ class WallServiceTest {
             is_pinned = true,
             marked_as_ads = true,
             is_favorite = true,
-            postponed_id = 44,
-            copy_history = null,
-            post_source = null,
-            geo = null
+            postponed_id = 44
         )
 
         val post2 = Post(
@@ -141,10 +135,7 @@ class WallServiceTest {
             is_pinned = true,
             marked_as_ads = true,
             is_favorite = true,
-            postponed_id = 44,
-            copy_history = null,
-            post_source = null,
-            geo = null
+            postponed_id = 44
         )
         val service = WallService
         service.add(post)
@@ -194,10 +185,7 @@ class WallServiceTest {
             is_pinned = true,
             marked_as_ads = true,
             is_favorite = true,
-            postponed_id = 44,
-            copy_history = null,
-            post_source = null,
-            geo = null
+            postponed_id = 44
         )
 
         val post2 = Post(
@@ -239,10 +227,7 @@ class WallServiceTest {
             is_pinned = true,
             marked_as_ads = true,
             is_favorite = true,
-            postponed_id = 44,
-            copy_history = null,
-            post_source = null,
-            geo = null
+            postponed_id = 44
         )
         val service = WallService
         service.add(post)
